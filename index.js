@@ -11,7 +11,7 @@ const port= process.env.port||3000;
 
 const app=express();
 
-app.use(bodyParser.urlencoded({extented:true}));
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
 app.get("/",(req,res)=>{
