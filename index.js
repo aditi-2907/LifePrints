@@ -17,7 +17,9 @@ app.use(express.static("public"));
 app.get("/",(req,res)=>{
     res.render("page1.ejs");
 })
-
+app.get("/p2",(req,res)=>{
+    res.render("page2.ejs");
+})
 app.listen(port,()=>{
     console.log(`server running on ${port}`);
 })
